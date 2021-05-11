@@ -1,0 +1,59 @@
+{
+  "name": "remo-coding-challenges",
+  "main": "app.js",
+  "private": true,
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/md5": "^2.2.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "md5": "^2.3.0",
+    "prettier": "^2.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-easy-panzoom": "^0.4.4",
+    "react-scripts": "3.4.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.7",
+    "@types/express": "4.17.6",
+    "@types/node": "^14.14.9",
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.5"
+  },
+  "scripts": {
+    "start": "run-p \"start:*\"",
+    "start:client": "cross-env PORT=3000 react-scripts start",
+    "start:server": "nodemon ./server/app.ts",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
